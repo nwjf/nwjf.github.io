@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="JavaScript,ES6,ES2015," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="简介ECMAScript 6.0 (简称ES6) ，ES6 的第一个版本，在 2015 年 6 月发布，正式名称就是《ECMAScript 2015 标准》（简称 ES2015）。 参考阮一峰 《ECMAScript 6 入门》 站点目录1. let/const2. 字符串3. 函数4. 类class基本用法5. export,import  let/constES6 中新增加了 let 和 co">
+<meta name="keywords" content="JavaScript,ES6,ES2015">
+<meta property="og:type" content="article">
+<meta property="og:title" content="你必须要懂的 ES6 语法">
+<meta property="og:url" content="http://yoursite.com/ES6入门/index.html">
+<meta property="og:site_name" content="墨痕">
+<meta property="og:description" content="简介ECMAScript 6.0 (简称ES6) ，ES6 的第一个版本，在 2015 年 6 月发布，正式名称就是《ECMAScript 2015 标准》（简称 ES2015）。 参考阮一峰 《ECMAScript 6 入门》 站点目录1. let/const2. 字符串3. 函数4. 类class基本用法5. export,import  let/constES6 中新增加了 let 和 co">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-07-15T06:50:42.035Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="你必须要懂的 ES6 语法">
+<meta name="twitter:description" content="简介ECMAScript 6.0 (简称ES6) ，ES6 的第一个版本，在 2015 年 6 月发布，正式名称就是《ECMAScript 2015 标准》（简称 ES2015）。 参考阮一峰 《ECMAScript 6 入门》 站点目录1. let/const2. 字符串3. 函数4. 类class基本用法5. export,import  let/constES6 中新增加了 let 和 co">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索","hits_empty":"没有找到关于\"${query}\"的结果","hits_stats":"${hits} 条相关项目，花费了${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/ES6入门/"/>
+
+
+
+
+
+  <title>你必须要懂的 ES6 语法 | 墨痕</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">墨痕</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">用墨记录成长的痕迹</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/ES6入门/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wjf">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/mohen.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="墨痕">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">你必须要懂的 ES6 语法</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-03-20T08:36:50+08:00">
+                2018-03-20
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
+                    <span itemprop="name">JavaScript</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>ECMAScript 6.0 (简称ES6) ，ES6 的第一个版本，在 2015 年 6 月发布，正式名称就是《ECMAScript 2015 标准》（简称 ES2015）。</p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>阮一峰 <a href="http://es6.ruanyifeng.com/" target="_blank" rel="noopener">《ECMAScript 6 入门》</a></p>
+<h3 id="站点目录"><a href="#站点目录" class="headerlink" title="站点目录"></a>站点目录</h3><p><a href="#letconst">1. let/const</a><br><a href="#string">2. 字符串</a><br><a href="#function">3. 函数</a><br><a href="#class">4. 类class基本用法</a><br><a href="#import">5. export,import</a></p>
+<p><span id="letconst"></span></p>
+<h3 id="let-const"><a href="#let-const" class="headerlink" title="let/const"></a>let/const</h3><p>ES6 中新增加了 let 和 const 两个命令，let用于定义变量，const 用于定义常量, 与var的不同之处在于let，const都是块级作用域，具体请看代码</p>
+<h4 id="let-or-var"><a href="#let-or-var" class="headerlink" title="let or var"></a>let or var</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// var</span></span><br><span class="line"><span class="keyword">if</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">  <span class="keyword">var</span> test = <span class="string">'hello word'</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(test); <span class="comment">// hello word;</span></span><br><span class="line"><span class="comment">// let</span></span><br><span class="line"><span class="keyword">if</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">  <span class="keyword">let</span> test = <span class="string">'hello word'</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">console</span>.log(test); <span class="comment">// ReferenceError: test is not defined</span></span><br></pre></td></tr></table></figure>
+<h4 id="const"><a href="#const" class="headerlink" title="const"></a>const</h4><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 情况一</span></span><br><span class="line"><span class="keyword">const</span> test = &#123;<span class="attr">a</span>: <span class="number">1</span>&#125;;</span><br><span class="line">test.a = <span class="number">2</span>;</span><br><span class="line"><span class="built_in">console</span>.log(test); <span class="comment">// &#123;a: 2&#125;</span></span><br><span class="line"><span class="comment">// 情况二</span></span><br><span class="line"><span class="keyword">const</span> test = <span class="string">'hello word'</span>;</span><br><span class="line">test = <span class="string">'test'</span>; <span class="comment">// TypeError: Assignment to constant variable.</span></span><br></pre></td></tr></table></figure>
+<p>小伙伴们看到这里是不是感觉不可思议，const是定义常量的（常量就是定义过后不可改变的量），不要急，看我慢慢道来，<br>原因是对于对象型的使用是指针式引用，常量只是指向了对象的指针，对象的内容却已然可以修改，注意数组（array）也是对象，看代码：</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>];</span><br><span class="line"><span class="built_in">console</span>.log(<span class="keyword">typeof</span> arr); <span class="comment">// object</span></span><br></pre></td></tr></table></figure>
+<p>那问题来了，怎么判断数组呢，解决这个问题前先了解下js的类型，<br>js中有六种数据类型，包括五种基本数据类型（Number, String, Boolean, Undefined, Null）,和一种复杂数据类型（Object）,如果对js类型比较模糊，请先学习js基础知识。<br>回到正题，数组类型判断.</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> arr = [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>];</span><br><span class="line"><span class="built_in">console</span>.log(arr <span class="keyword">instanceof</span> <span class="built_in">Array</span>); <span class="comment">// true</span></span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Array</span>.isArray(arr)); <span class="comment">// true</span></span><br></pre></td></tr></table></figure>
+<p><span id="string"></span></p>
+<h3 id="字符串"><a href="#字符串" class="headerlink" title="字符串"></a>字符串</h3><h4 id="模板字符串"><a href="#模板字符串" class="headerlink" title="模板字符串"></a>模板字符串</h4><p><strong>( `` )</strong> 反引号来定义模板字符串，<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// es5</span></span><br><span class="line"><span class="keyword">var</span> msg = <span class="string">'hello word'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> str1 = <span class="string">'&lt;div&gt;'</span> + msg + <span class="string">'&lt;/div&gt;'</span>;</span><br><span class="line"><span class="keyword">var</span> str2 = <span class="string">'&lt;div&gt;'</span> +</span><br><span class="line">          <span class="string">'&lt;span&gt;'</span> +</span><br><span class="line">          <span class="string">'&lt;/span&gt;'</span> +</span><br><span class="line">          <span class="string">'&lt;/div&gt;'</span>;</span><br><span class="line"><span class="keyword">var</span> str3 = <span class="string">'&lt;div&gt;\</span></span><br><span class="line"><span class="string">            &lt;span&gt;\</span></span><br><span class="line"><span class="string">            &lt;/span&gt;\</span></span><br><span class="line"><span class="string">            &lt;/div&gt;'</span>;</span><br><span class="line"><span class="comment">// es6</span></span><br><span class="line"><span class="keyword">var</span> str1 = <span class="string">`&lt;div&gt;<span class="subst">$&#123;msg&#125;</span>&lt;/div&gt;`</span>;</span><br><span class="line"><span class="keyword">var</span> str2 = <span class="string">`&lt;div&gt;</span></span><br><span class="line"><span class="string">            &lt;span&gt;</span></span><br><span class="line"><span class="string">            &lt;/span&gt;</span></span><br><span class="line"><span class="string">            &lt;/div&gt;</span></span><br><span class="line"><span class="string">            `</span>;</span><br></pre></td></tr></table></figure></p>
+<p>注意</p>
+<ol>
+<li>如果在模板字符串中需要使用反引号，则前面要用反斜杠转义</li>
+<li>如果使用模板字符串表示多行字符串，所有的空格和缩进都会被保留在输出之中。</li>
+<li>模板字符串中嵌入变量，需要将变量名写在${}之中。</li>
+<li>大括号内部可以放入任意的 JavaScript 表达式，可以进行运算，以及引用对象属性。</li>
+<li>如果模板字符串中的变量没有声明，将报错。</li>
+</ol>
+<p><span id="function"></span></p>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h4 id="箭头函数"><a href="#箭头函数" class="headerlink" title="箭头函数"></a>箭头函数</h4><h5 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> test = <span class="function"><span class="params">v</span> =&gt;</span> v;</span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="keyword">var</span> test = <span class="function"><span class="keyword">function</span> (<span class="params">v</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> v;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// </span></span><br><span class="line"><span class="keyword">var</span> test = <span class="function"><span class="params">()</span> =&gt;</span> <span class="number">5</span>;</span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="keyword">var</span> test = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; <span class="keyword">return</span> <span class="number">5</span> &#125;;</span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="keyword">var</span> sum = <span class="function">(<span class="params">num1, num2</span>) =&gt;</span> num1 + num2;</span><br><span class="line"><span class="comment">// 等同于</span></span><br><span class="line"><span class="keyword">var</span> sum = <span class="function"><span class="keyword">function</span>(<span class="params">num1, num2</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> num1 + num2;</span><br><span class="line">&#125;;</span><br><span class="line"><span class="comment">// 如果箭头函数的代码块部分多于一条语句，就要使用大括号将它们括起来，并且使用return语句返回。</span></span><br><span class="line"><span class="keyword">var</span> sum = <span class="function">(<span class="params">num1, num2</span>) =&gt;</span> &#123; <span class="keyword">return</span> num1 + num2; &#125;</span><br></pre></td></tr></table></figure>
+<p>注意点<br>（1）函数体内的this对象，就是定义时所在的对象，而不是使用时所在的对象。<br>（2）不可以当作构造函数，也就是说，不可以使用new命令，否则会抛出一个错误。<br>（3）不可以使用arguments对象，该对象在函数体内不存在。如果要用，可以用 rest 参数代替。<br>（4）不可以使用yield命令，因此箭头函数不能用作 Generator 函数。</p>
+<h4 id="函数参数，参数默认值"><a href="#函数参数，参数默认值" class="headerlink" title="函数参数，参数默认值"></a>函数参数，参数默认值</h4><p>ES6 之前，不能直接为函数的参数指定默认值，只能采用变通的方法。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// es6之前</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">log</span> (<span class="params">x, y</span>) </span>&#123;</span><br><span class="line">  x = x || <span class="number">1</span>;</span><br><span class="line">  y = y || <span class="number">2</span>;</span><br><span class="line">  <span class="keyword">return</span> x + y;</span><br><span class="line">&#125;</span><br><span class="line">log(); <span class="comment">// 3</span></span><br><span class="line">log(<span class="number">2</span>,<span class="number">3</span>) <span class="comment">// 5</span></span><br><span class="line"><span class="comment">// es6</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">log</span> (<span class="params">x = <span class="number">1</span>, y = <span class="number">2</span></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">return</span> x + y;</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 或者</span></span><br><span class="line"><span class="keyword">let</span> log = <span class="function">(<span class="params">x = <span class="number">1</span>, y = <span class="number">2</span></span>) =&gt;</span> x + y;</span><br><span class="line"></span><br><span class="line">log(); <span class="comment">// 3</span></span><br><span class="line">log(<span class="number">2</span>,<span class="number">3</span>) <span class="comment">// 5</span></span><br></pre></td></tr></table></figure></p>
+<p>注意</p>
+<ol>
+<li>使用参数默认值时，函数不能有同名参数。</li>
+<li>参数变量是默认声明的，所以不能用let或const再次声明。</li>
+<li>指定了默认值以后，函数的length属性，将返回没有指定默认值的参数个数。也就是说，指定了默认值后，length属性将失真。</li>
+<li>一旦设置了参数的默认值，函数进行声明初始化时，参数会形成一个单独的作用域（context）。等到初始化结束，这个作用域就会消失。这种语法行为，在不设置参数默认值时，是不会出现的。</li>
+</ol>
+<p>函数参数<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// es6之前</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> s = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> <span class="built_in">arguments</span>) &#123;</span><br><span class="line">    s += <span class="built_in">arguments</span>[i]</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">console</span>.log(s);</span><br><span class="line">&#125;</span><br><span class="line">sum(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>); <span class="comment">// 21</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// es6</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">sum</span> (<span class="params">...num</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> s = <span class="number">0</span>;</span><br><span class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i <span class="keyword">in</span> num) &#123;</span><br><span class="line">    s += num[i];</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">console</span>.log(s);</span><br><span class="line">&#125;</span><br><span class="line">sum(<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>,<span class="number">6</span>); <span class="comment">// 21</span></span><br></pre></td></tr></table></figure></p>
+<p>注意</p>
+<ol>
+<li>arguments对象不是数组，而是一个类似数组的对象。所以为了使用数组的方法，必须使用Array.prototype.slice.call先将其转为数组。</li>
+<li>rest 参数之后不能再有其他参数（即只能是最后一个参数），否则会报错。</li>
+<li>函数的length属性，不包括 rest 参数。</li>
+<li>只要函数参数使用了默认值、解构赋值、或者扩展运算符，那么函数内部就不能显式设定为严格模式，否则会报错。</li>
+</ol>
+<p><span id="class"></span></p>
+<h3 id="class基本用法"><a href="#class基本用法" class="headerlink" title="class基本用法"></a>class基本用法</h3><h4 id="基本用法-1"><a href="#基本用法-1" class="headerlink" title="基本用法"></a>基本用法</h4><p>ES6 提供了更接近传统语言的写法，引入了 Class（类）这个概念，作为对象的模板。通过class关键字，可以定义类。</p>
+<p>基本上，ES6 的class可以看作只是一个语法糖，它的绝大部分功能，ES5 都可以做到，新的class写法只是让对象原型的写法更加清晰、更像面向对象编程的语法而已。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 基本使用</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Point</span> </span>&#123;</span><br><span class="line">  <span class="comment">// 类方法</span></span><br><span class="line">  toString () &#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">typeof</span> Point; <span class="comment">// function</span></span><br></pre></td></tr></table></figure>
+<p>类的数据类型就是函数，类本身就指向构造函数。<br>使用的时候，也是直接对类使用new命令，跟构造函数的用法完全一致。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 类的两种方法</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Foo</span> </span>&#123;</span><br><span class="line">   <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> f = <span class="keyword">new</span> Point(); <span class="comment">// Uncaught ReferenceError: Foo is not defined(...)</span></span><br><span class="line"><span class="keyword">var</span> Point = <span class="class"><span class="keyword">class</span> </span>&#123;</span><br><span class="line">  <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> f = <span class="keyword">new</span> Point(); <span class="comment">// 正确</span></span><br></pre></td></tr></table></figure></p>
+<p>类声明和函数声明不同的一点是，函数声明存在变量提升现象，而类声明不会。即，类必须先声明，然后才能使用，否则会抛出ReferenceError异常。</p>
+<h4 id="严格模式"><a href="#严格模式" class="headerlink" title="严格模式"></a>严格模式</h4><p>类和模块的内部，默认就是严格模式，所以不需要使用use strict指定运行模式。只要你的代码写在类或模块之中，就只有严格模式可用。</p>
+<h4 id="constructor-NaN"><a href="#constructor-NaN" class="headerlink" title="constructor"></a>constructor</h4><p>constructor方法是一个特殊的类方法，它既不是静态方法也不是实例方法，它仅在实例化的时候被调用。一个类只能拥有一个名为constructor的方法，否则会抛出SyntaxError异常.</p>
+<p>如果没有定义constructor方法，这个方法会被默认添加，即，不管有没有显示定义，任何一个类都有constructor方法。</p>
+<p>子类必须在constructor方法中调用super方法，否则新建实例时会报错。因为子类没有自己的this对象，而是继承父类的this对象，然后对其进行加工，如果不调用super方法，子类就得不到this对象。</p>
+<h4 id="静态方法"><a href="#静态方法" class="headerlink" title="静态方法"></a>静态方法</h4><p>类相当于实例的原型，所有在类中定义的方法，都会被实例继承。<br>如果在一个方法前，加上static关键字，就表示该方法不会被实例继承，而是直接通过类来调用，这就称为“静态方法”。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 静态方法</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Foo</span> </span>&#123;</span><br><span class="line">  <span class="keyword">static</span> toString () &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'我是静态方法'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  point () &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'我不是静态方法'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  log () &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'我是输出方法'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Point</span> <span class="keyword">extends</span> <span class="title">Foo</span> </span>&#123;</span><br><span class="line">  log () &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'重写父级log方法'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> f = <span class="keyword">new</span> Foo();</span><br><span class="line"><span class="keyword">let</span> p = <span class="keyword">new</span> Point();</span><br><span class="line"></span><br><span class="line">Foo.toString(); <span class="comment">// 我是静态方法</span></span><br><span class="line">f.toString();   <span class="comment">// TypeError: f.toString is not a function</span></span><br><span class="line">f.point();     <span class="comment">// 我不是静态方法</span></span><br><span class="line">f.log();       <span class="comment">// 我是输出方法</span></span><br><span class="line"></span><br><span class="line">Point.toString(); <span class="comment">// 我是静态方法</span></span><br><span class="line">p.toString();  <span class="comment">// TypeError: p.log is not a function</span></span><br><span class="line">p.point();     <span class="comment">// 我不是静态方法</span></span><br><span class="line">p.log();       <span class="comment">// 重写父级log方法</span></span><br></pre></td></tr></table></figure>
+<p>注意</p>
+<ol>
+<li>如果静态方法包含this关键字，这个this指的是类，而不是实例。</li>
+<li>静态方法可以与非静态方法重名。</li>
+<li>父类的静态方法可以被子类继承。</li>
+<li>ES6 明确规定，Class 内部只有静态方法，没有静态属性。</li>
+</ol>
+<h4 id="class的getter和setter方法"><a href="#class的getter和setter方法" class="headerlink" title="class的getter和setter方法"></a>class的getter和setter方法</h4><p>与 ES5 一样，在“类”的内部可以使用get和set关键字，对某个属性设置存值函数和取值函数，拦截该属性的存取行为。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Point</span> </span>&#123;</span><br><span class="line">  get prop () &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'我是get方法'</span>);</span><br><span class="line">  &#125;</span><br><span class="line">  set prop (value) &#123;</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="string">'我是set方法---值为 : '</span> + value);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> p = <span class="keyword">new</span> Point();</span><br><span class="line">p.prop;     <span class="comment">// 我是get方法</span></span><br><span class="line">p.prop = <span class="string">'demo'</span>; <span class="comment">// 我是set方法---值为 : demo</span></span><br></pre></td></tr></table></figure>
+<h4 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h4><p>Class 可以通过extends关键字实现继承，这比 ES5 的通过修改原型链实现继承，要清晰和方便很多。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Point</span> </span>&#123;&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Foo</span> <span class="keyword">extends</span> <span class="title">Point</span> </span>&#123;&#125;</span><br><span class="line"><span class="comment">// Foo就具有Point的所有方法，相当于复制</span></span><br></pre></td></tr></table></figure>
+<h5 id="super"><a href="#super" class="headerlink" title="super"></a>super</h5><p>super可以理解为是指向自己超（父）类对象的一个指针，而这个超类指的是离自己最近的一个父类。<br>与this类似，super相当于是指向当前对象的父类，这样就可以用super.xxx来引用父类的成员。</p>
+<h6 id="当做函数使用"><a href="#当做函数使用" class="headerlink" title="当做函数使用"></a>当做函数使用</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> </span>&#123;&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">B</span> <span class="keyword">extends</span> <span class="title">A</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>() &#123;</span><br><span class="line">    <span class="keyword">super</span>(); <span class="comment">//ES6 要求，子类的构造函数必须执行一次super函数。</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>注意</p>
+<ol>
+<li>super虽然代表了父类A的构造函数，但是返回的是子类B的实例，即super内部的this指的是B，因此super()在这里相当于A.prototype.constructor.call(this)。—在子类普通方法中通过super调用父类的方法时，方法内部的this指向当前的子类实例。</li>
+<li>只能用在构造函数中； </li>
+<li>在构造函数中用this之前，必须先使用super</li>
+</ol>
+<h6 id="当做对象使用"><a href="#当做对象使用" class="headerlink" title="当做对象使用"></a>当做对象使用</h6><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">A</span> </span>&#123;</span><br><span class="line">  c() &#123;</span><br><span class="line">  <span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">&#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">B</span> <span class="keyword">extends</span> <span class="title">A</span> </span>&#123;</span><br><span class="line">  <span class="keyword">constructor</span>() &#123;</span><br><span class="line">    <span class="keyword">super</span>();</span><br><span class="line">    <span class="built_in">console</span>.log(<span class="keyword">super</span>.c()); <span class="comment">// 2</span></span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">let</span> b = <span class="keyword">new</span> B();</span><br></pre></td></tr></table></figure>
+<p>上面代码中，子类B当中的super.c()，就是将super当作一个对象使用。这时，super在普通方法之中，指向A.prototype，所以super.c()就相当于A.prototype.c()。<br>在普通方法中，指向父类的原型对象；在静态方法中，指向父类。</p>
+<p><span id="import"></span></p>
+<h3 id="import-export"><a href="#import-export" class="headerlink" title="import,export"></a>import,export</h3><p>.ES6 模块的设计思想，是尽量的静态化，使得编译时就能确定模块的依赖关系，以及输入和输出的变量。</p>
+<p>注意</p>
+<ol>
+<li><p>ES6模块默认使用严格模式，无论是否声明“use strict”</p>
+</li>
+<li><p>ES6 模块之中，顶层的this指向undefined，即不应该在顶层代码使用this。</p>
+</li>
+</ol>
+<h4 id="export"><a href="#export" class="headerlink" title="export"></a>export</h4><p>模块是独立的文件，该文件内部的所有的变量外部都无法获取。如果希望获取某个变量，必须通过export输出，</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 方法一</span></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="keyword">const</span> b = <span class="number">2</span>;</span><br><span class="line"><span class="keyword">export</span> <span class="function"><span class="keyword">function</span> <span class="title">toString</span> (<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 方法二</span></span><br><span class="line"><span class="keyword">const</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">const</span> b = <span class="number">2</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">toString</span> (<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line"><span class="keyword">export</span> &#123;a, b, toString&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 重命名</span></span><br><span class="line"><span class="keyword">const</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="keyword">const</span> b = <span class="number">2</span>;</span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">toString</span> (<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line"><span class="keyword">export</span> &#123;</span><br><span class="line">  a <span class="keyword">as</span> v1,</span><br><span class="line">  b <span class="keyword">as</span> v2,</span><br><span class="line">  toString <span class="keyword">as</span> v3</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="export-default"><a href="#export-default" class="headerlink" title="export default"></a>export default</h4><p>使用import导入时，都需要知道模块中所要加载的变量名或函数名，用户可能不想阅读源码，只想直接使用接口，就可以用export default命令，为模块指定输出<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> <span class="function"><span class="keyword">function</span>  (<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line"><span class="comment">// 加载时</span></span><br><span class="line"><span class="keyword">import</span> toString <span class="keyword">from</span> <span class="string">'./a.js'</span>;</span><br><span class="line">toString();</span><br></pre></td></tr></table></figure></p>
+<p>注意</p>
+<p>export 与 export default的区别： 两者都是对外暴露接口，export可以在模块中多次使用，export default只能出现一次。</p>
+<h4 id="import"><a href="#import" class="headerlink" title="import"></a>import</h4><p>export定义了模块的对外接口后，其他JS文件就可以通过import来加载这个模块，</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 方法一</span></span><br><span class="line"><span class="keyword">import</span> axios <span class="keyword">from</span> <span class="string">'./axios'</span>;</span><br><span class="line"><span class="comment">// 方法二</span></span><br><span class="line"><span class="keyword">import</span> &#123;toString, a, b&#125; <span class="keyword">from</span> <span class="string">'./mo.js'</span>;</span><br><span class="line"><span class="comment">// 方法三</span></span><br><span class="line"><span class="keyword">import</span> &#123;a <span class="keyword">as</span> b, n <span class="keyword">as</span> c&#125; <span class="keyword">from</span> <span class="string">'./mo.js'</span>; <span class="comment">// 对方法重命名</span></span><br><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> reg <span class="keyword">from</span> <span class="string">'./reg.js'</span>; <span class="comment">// 把所有方法放入到reg对象中</span></span><br></pre></td></tr></table></figure>
+<p>es6 基础语法就写到这里了，后续还会介绍es6的Promise 的使用方法等，文章节俭与阮大师的es基础入门，如有问题请联系邮箱<a href="mailto:newwjf@163.com" target="_blank" rel="noopener">newwjf@163.com</a>，我会及时回复。</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/JavaScript/" rel="tag"># JavaScript</a>
+          
+            <a href="/tags/ES6/" rel="tag"># ES6</a>
+          
+            <a href="/tags/ES2015/" rel="tag"># ES2015</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/replace/" rel="next" title="replace方法深入学习">
+                <i class="fa fa-chevron-left"></i> replace方法深入学习
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/vue-cli/" rel="prev" title="Vue(一) -- vue-cli(2.x)">
+                Vue(一) -- vue-cli(2.x) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/mohen.png"
+                alt="wjf" />
+            
+              <p class="site-author-name" itemprop="name">wjf</p>
+              <p class="site-description motion-element" itemprop="description">用心去分享</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/huangfengya" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#简介"><span class="nav-number">1.</span> <span class="nav-text">简介</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考"><span class="nav-number">2.</span> <span class="nav-text">参考</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#站点目录"><span class="nav-number">3.</span> <span class="nav-text">站点目录</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#let-const"><span class="nav-number">4.</span> <span class="nav-text">let/const</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#let-or-var"><span class="nav-number">4.1.</span> <span class="nav-text">let or var</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#const"><span class="nav-number">4.2.</span> <span class="nav-text">const</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字符串"><span class="nav-number">5.</span> <span class="nav-text">字符串</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#模板字符串"><span class="nav-number">5.1.</span> <span class="nav-text">模板字符串</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#函数"><span class="nav-number">6.</span> <span class="nav-text">函数</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#箭头函数"><span class="nav-number">6.1.</span> <span class="nav-text">箭头函数</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#基本用法"><span class="nav-number">6.1.1.</span> <span class="nav-text">基本用法</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#函数参数，参数默认值"><span class="nav-number">6.2.</span> <span class="nav-text">函数参数，参数默认值</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#class基本用法"><span class="nav-number">7.</span> <span class="nav-text">class基本用法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#基本用法-1"><span class="nav-number">7.1.</span> <span class="nav-text">基本用法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#严格模式"><span class="nav-number">7.2.</span> <span class="nav-text">严格模式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#constructor-NaN"><span class="nav-number">7.3.</span> <span class="nav-text">constructor</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#静态方法"><span class="nav-number">7.4.</span> <span class="nav-text">静态方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#class的getter和setter方法"><span class="nav-number">7.5.</span> <span class="nav-text">class的getter和setter方法</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#继承"><span class="nav-number">7.6.</span> <span class="nav-text">继承</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#super"><span class="nav-number">7.6.1.</span> <span class="nav-text">super</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#当做函数使用"><span class="nav-number">7.6.1.1.</span> <span class="nav-text">当做函数使用</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#当做对象使用"><span class="nav-number">7.6.1.2.</span> <span class="nav-text">当做对象使用</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#import-export"><span class="nav-number">8.</span> <span class="nav-text">import,export</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#export"><span class="nav-number">8.1.</span> <span class="nav-text">export</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#export-default"><span class="nav-number">8.2.</span> <span class="nav-text">export default</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#import"><span class="nav-number">8.3.</span> <span class="nav-text">import</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">wjf</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

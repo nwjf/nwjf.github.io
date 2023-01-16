@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Debugger," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="作为一名Front-end Development Engineer（FE）可谓说浏览器是最常接触的软件，各种各样的浏览器最让你头疼了吧。 本篇文章介绍写 移动端调试技巧 各种设备调试大同小异，文章主要使用 MI 9 SE 设备 文章讲解两种调试方式  google chrome 手机联调 uc 浏览器 手机联调  手机打开‘开发者选项’path: 手机–&amp;gt; 设置 –&amp;gt; 系统参数 –&amp;">
+<meta name="keywords" content="Debugger">
+<meta property="og:type" content="article">
+<meta property="og:title" content="移动端调试技巧">
+<meta property="og:url" content="http://yoursite.com/debugging/index.html">
+<meta property="og:site_name" content="墨痕">
+<meta property="og:description" content="作为一名Front-end Development Engineer（FE）可谓说浏览器是最常接触的软件，各种各样的浏览器最让你头疼了吧。 本篇文章介绍写 移动端调试技巧 各种设备调试大同小异，文章主要使用 MI 9 SE 设备 文章讲解两种调试方式  google chrome 手机联调 uc 浏览器 手机联调  手机打开‘开发者选项’path: 手机–&amp;gt; 设置 –&amp;gt; 系统参数 –&amp;">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://yoursite.com/debugging/phone2.jpg">
+<meta property="og:image" content="http://yoursite.com/debugging/phone1.jpg">
+<meta property="og:image" content="http://yoursite.com/debugging/chrome1.png">
+<meta property="og:image" content="http://yoursite.com/debugging/chrome2.png">
+<meta property="og:image" content="http://yoursite.com/debugging/uc1.jpg">
+<meta property="og:image" content="http://yoursite.com/debugging/uc2.jpg">
+<meta property="og:updated_time" content="2019-08-03T03:28:54.026Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="移动端调试技巧">
+<meta name="twitter:description" content="作为一名Front-end Development Engineer（FE）可谓说浏览器是最常接触的软件，各种各样的浏览器最让你头疼了吧。 本篇文章介绍写 移动端调试技巧 各种设备调试大同小异，文章主要使用 MI 9 SE 设备 文章讲解两种调试方式  google chrome 手机联调 uc 浏览器 手机联调  手机打开‘开发者选项’path: 手机–&amp;gt; 设置 –&amp;gt; 系统参数 –&amp;">
+<meta name="twitter:image" content="http://yoursite.com/debugging/phone2.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"搜索","hits_empty":"没有找到关于\"${query}\"的结果","hits_stats":"${hits} 条相关项目，花费了${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.com/debugging/"/>
+
+
+
+
+
+  <title>移动端调试技巧 | 墨痕</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">墨痕</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">用墨记录成长的痕迹</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/debugging/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="wjf">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/mohen.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="墨痕">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">移动端调试技巧</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-08-03T13:01:11+08:00">
+                2019-08-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Debugger/" itemprop="url" rel="index">
+                    <span itemprop="name">Debugger</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>作为一名Front-end Development Engineer（FE）可谓说浏览器是最常接触的软件，各种各样的浏览器最让你头疼了吧。</p>
+<p>本篇文章介绍写 移动端调试技巧</p>
+<p>各种设备调试大同小异，文章主要使用 MI 9 SE 设备</p>
+<p>文章讲解两种调试方式</p>
+<ul>
+<li>google chrome 手机联调</li>
+<li>uc 浏览器 手机联调</li>
+</ul>
+<h2 id="手机打开‘开发者选项’"><a href="#手机打开‘开发者选项’" class="headerlink" title="手机打开‘开发者选项’"></a>手机打开‘开发者选项’</h2><p>path: 手机–&gt; 设置 –&gt; 系统参数 –&gt; miui版本（点击三下）</p>
+<p><img src="/debugging/phone2.jpg" alt="phone"></p>
+<p>path: 手机–&gt; 设置 –&gt; 开发者选项 –&gt; USB调试（打开）</p>
+<p><img src="/debugging/phone1.jpg" alt="phone"></p>
+<p>tips：</p>
+<p>可能别的型号手机需要安装驱动，mi9se没有这步骤，</p>
+<p>华为手机可以使用华为助手软件，</p>
+<p>其他手机可以使用其他软件协助连接电脑</p>
+<h2 id="google-chrome-真机调试"><a href="#google-chrome-真机调试" class="headerlink" title="google chrome 真机调试"></a>google chrome 真机调试</h2><p>前期准备</p>
+<ul>
+<li>电脑 google chrome</li>
+<li>手机 google chrome</li>
+<li>数据线（或者同处一个局域网）</li>
+<li>可能需要梯子（翻墙自备，不做说明）</li>
+</ul>
+<h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p>打开电脑chrome 访问 chrome://inspect/#devices</p>
+<p><img src="/debugging/chrome1.png" alt="google chrome"></p>
+<h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><p>选择要调试的页面inspect就可以了<br>就进入dev调试模式了，和浏览器调试基本一样，不做介绍</p>
+<p><img src="/debugging/chrome2.png" alt="google chrom"></p>
+<h2 id="uc-真机调试"><a href="#uc-真机调试" class="headerlink" title="uc 真机调试"></a>uc 真机调试</h2><p>google chrome 调试会用到梯子，可能对于没有梯子的你们就感觉头大了，</p>
+<p>那就介绍一个不需要梯子的国产调试软件</p>
+<p>uc plus 为uc浏览器开发者版本，是为方便前端开发人员进行移动端web项目进行调试</p>
+<p><a href="https://dev.ucweb.com/" target="_blank" rel="noopener">uc plus 官网</a></p>
+<p>因为官方文档很详细，就简单带一下了</p>
+<p>前期准备</p>
+<ul>
+<li>UC Plus 浏览器<ul>
+<li><a href="https://dev.ucweb.com/download/?spm=ucplus.11199946.home-card.1.53974692AdAu7a" target="_blank" rel="noopener">12.1.6.996版本下载地址</a></li>
+</ul>
+</li>
+<li>UC浏览器开发者工具<ul>
+<li><a href="http://img.ucweb.com/s/uae/g/4x/4x/uc-devtools-msi_0.4.1.zip?spm=ucplus.11213556.0.0.78a0253a53uMtZ&amp;file=uc-devtools-msi_0.4.1.zip" target="_blank" rel="noopener">windows 系统下载</a></li>
+<li><a href="http://img.ucweb.com/s/uae/g/4x/4x/uc-devtools_0.4.1.dmg?spm=ucplus.11213556.0.0.78a0253a53uMtZ&amp;file=uc-devtools_0.4.1.dmg" target="_blank" rel="noopener">macOs 系统下载</a></li>
+</ul>
+</li>
+<li>数据线 or 同一局域网</li>
+</ul>
+<h3 id="第一步-1"><a href="#第一步-1" class="headerlink" title="第一步"></a>第一步</h3><p>使用uc plus 浏览器访问你要调试的页面</p>
+<h3 id="第二步-1"><a href="#第二步-1" class="headerlink" title="第二步"></a>第二步</h3><p>打开uc devtools 软件<br><img src="/debugging/uc1.jpg" alt="uc dev"></p>
+<h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h3><p>选择需要调试的页面<br><img src="/debugging/uc2.jpg" alt="uc dev"></p>
+<p>后续调试和pc chrome调试一样，不在多说</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Debugger/" rel="tag"># Debugger</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/vue-7/" rel="next" title="Vue(六) -- v-model">
+                <i class="fa fa-chevron-left"></i> Vue(六) -- v-model
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image"
+                src="/images/mohen.png"
+                alt="wjf" />
+            
+              <p class="site-author-name" itemprop="name">wjf</p>
+              <p class="site-description motion-element" itemprop="description">用心去分享</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">14</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/huangfengya" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#手机打开‘开发者选项’"><span class="nav-number">1.</span> <span class="nav-text">手机打开‘开发者选项’</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#google-chrome-真机调试"><span class="nav-number">2.</span> <span class="nav-text">google chrome 真机调试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一步"><span class="nav-number">2.1.</span> <span class="nav-text">第一步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二步"><span class="nav-number">2.2.</span> <span class="nav-text">第二步</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#uc-真机调试"><span class="nav-number">3.</span> <span class="nav-text">uc 真机调试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第一步-1"><span class="nav-number">3.1.</span> <span class="nav-text">第一步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第二步-1"><span class="nav-number">3.2.</span> <span class="nav-text">第二步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#第三步"><span class="nav-number">3.3.</span> <span class="nav-text">第三步</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">wjf</span>
+
+  
+</div>
+
+
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
