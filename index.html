@@ -4,9 +4,50 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>导航系统</title>
 </head>
+<style>
+  * { padding: 0; margin: 0; box-sizing: border-box; }
+  body {
+    width: 100%;
+    height: 100%;
+    background: #f8f8f8;
+    padding: 24px;
+    background-image: url('http://p1.qhimgs4.com/t01fef6f9d5e69335dd.jpg');
+    background-position: center;
+  }
+  .home-warp {
+    width: 100%;
+    max-width: 1200px;
+    min-height: calc(100vh - 48px);
+    background: #fff;
+    margin: auto;
+    border-radius: 8px;
+    padding: 24px;
+  }
+  .home-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .home-list {
+    display: flex;
+  }
+  .home-list-item {
+    color: #333;
+  }
+</style>
 <body>
-  <h1>调试部署</h1>
+  <div class="home-warp">
+    <div class="home-title">智能导航系统</div>
+    <div class="home-list">
+      <a class="home-list-item" href="/parental-tools">
+        <div class="home-item-img">
+          <img src="./assets/js.png" alt="">
+        </div>
+        <div class="home-item-name">运算系统</div>
+      </a>
+    </div>
+  </div>
 </body>
 </html>
