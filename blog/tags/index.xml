@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>🧩 标签 on nwjf Blog</title>
+    <link>https://xyming108.github.io/tags/</link>
+    <description>Recent content in 🧩 标签 on nwjf Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 26 Jun 2019 13:01:11 +0000</lastBuildDate><atom:link href="https://xyming108.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>JavaScript</title>
+      <link>https://xyming108.github.io/tags/javascript/</link>
+      <pubDate>Wed, 26 Jun 2019 13:01:11 +0000</pubDate>
+      
+      <guid>https://xyming108.github.io/tags/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>vue</title>
+      <link>https://xyming108.github.io/tags/vue/</link>
+      <pubDate>Wed, 26 Jun 2019 13:01:11 +0000</pubDate>
+      
+      <guid>https://xyming108.github.io/tags/vue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TypeScript</title>
+      <link>https://xyming108.github.io/tags/typescript/</link>
+      <pubDate>Tue, 11 Jun 2019 18:36:50 +0000</pubDate>
+      
+      <guid>https://xyming108.github.io/tags/typescript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>规范</title>
+      <link>https://xyming108.github.io/tags/%E8%A7%84%E8%8C%83/</link>
+      <pubDate>Tue, 11 Jun 2019 18:36:50 +0000</pubDate>
+      
+      <guid>https://xyming108.github.io/tags/%E8%A7%84%E8%8C%83/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ES6</title>
+      <link>https://xyming108.github.io/tags/es6/</link>
+      <pubDate>Fri, 14 Sep 2018 11:10:13 +0000</pubDate>
+      
+      <guid>https://xyming108.github.io/tags/es6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ES8</title>
+      <link>https://xyming108.github.io/tags/es8/</link>
+      <pubDate>Fri, 14 Sep 2018 11:10:13 +0000</pubDate>
+      
+      <guid>https://xyming108.github.io/tags/es8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>优化</title>
+      <link>https://xyming108.github.io/tags/%E4%BC%98%E5%8C%96/</link>
+      <pubDate>Mon, 13 Aug 2018 20:10:13 +0000</pubDate>
+      
+      <guid>https://xyming108.github.io/tags/%E4%BC%98%E5%8C%96/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ES2015</title>
+      <link>https://xyming108.github.io/tags/es2015/</link>
+      <pubDate>Tue, 20 Mar 2018 08:36:50 +0000</pubDate>
+      
+      <guid>https://xyming108.github.io/tags/es2015/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>微信小程序</title>
+      <link>https://xyming108.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xyming108.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

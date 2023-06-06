@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>微信小程序 on nwjf Blog</title>
+    <link>https://xyming108.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
+    <description>Recent content in 微信小程序 on nwjf Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language><atom:link href="https://xyming108.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>微信小程序-template / component</title>
+      <link>https://xyming108.github.io/posts/wx2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://xyming108.github.io/posts/wx2/</guid>
+      <description>技术的不断发展与革新，最根本的体现于提高用户体验，减少码农们的工作量。 原生小程序开发相对比较麻烦，不过为了提高代码的复用和模块化同样小程序给我们提供了组价化开发思路。 小程序中有两种组件化的方式，template，component。 这两者之间的区别是 template主要是展示，方</description>
+    </item>
+    
+  </channel>
+</rss>

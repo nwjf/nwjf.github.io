@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>ES6 on nwjf Blog</title>
+    <link>https://xyming108.github.io/tags/es6/</link>
+    <description>Recent content in ES6 on nwjf Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 14 Sep 2018 11:10:13 +0000</lastBuildDate><atom:link href="https://xyming108.github.io/tags/es6/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>js异步 -- Promise 与 Async / Await</title>
+      <link>https://xyming108.github.io/posts/async/</link>
+      <pubDate>Fri, 14 Sep 2018 11:10:13 +0000</pubDate>
+      
+      <guid>https://xyming108.github.io/posts/async/</guid>
+      <description>Promise 简介: Promise 是异步编程的一种解决方案 ES6 规定，Promise对象是一个构造函数，用来生成Promise实例。 Promise 一般用于网络和 I/O 操作，比如读取文件，或者创建 HTTP 请求。我们可以创建异步 promise，然后用 then 添加一个回调函数，当 promise 结束后会触发这个回调函数，而非阻塞住当前“线程”。回调函数本</description>
+    </item>
+    
+    <item>
+      <title>你必须要懂的 ES6 语法</title>
+      <link>https://xyming108.github.io/posts/es6%E5%85%A5%E9%97%A8/</link>
+      <pubDate>Tue, 20 Mar 2018 08:36:50 +0000</pubDate>
+      
+      <guid>https://xyming108.github.io/posts/es6%E5%85%A5%E9%97%A8/</guid>
+      <description>简介 ECMAScript 6.0 (简称ES6) ，ES6 的第一个版本，在 2015 年 6 月发布，正式名称就是《ECMAScript 2015 标准》（简称 ES2015）。 参考 阮一峰 《ECMAScript 6 入门》 站点目录 1. let/const 2. 字符串 3. 函数 4. 类class基本用法 5. export,import let/const ES6 中新增加了 let 和 const 两个命令，let用于定义变量，const 用于</description>
+    </item>
+    
+  </channel>
+</rss>
