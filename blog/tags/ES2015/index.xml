@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>ES2015 on nwjf Blog</title>
-    <link>./tags/es2015/</link>
+    <link>/blog/tags/es2015/</link>
     <description>Recent content in ES2015 on nwjf Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 20 Mar 2018 08:36:50 +0000</lastBuildDate><atom:link href="./tags/es2015/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Mar 2018 08:36:50 +0000</lastBuildDate><atom:link href="/blog/tags/es2015/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>你必须要懂的 ES6 语法</title>
-      <link>./posts/es6%E5%85%A5%E9%97%A8/</link>
+      <link>/blog/posts/es6%E5%85%A5%E9%97%A8/</link>
       <pubDate>Tue, 20 Mar 2018 08:36:50 +0000</pubDate>
       
-      <guid>./posts/es6%E5%85%A5%E9%97%A8/</guid>
+      <guid>/blog/posts/es6%E5%85%A5%E9%97%A8/</guid>
       <description>简介 ECMAScript 6.0 (简称ES6) ，ES6 的第一个版本，在 2015 年 6 月发布，正式名称就是《ECMAScript 2015 标准》（简称 ES2015）。 参考 阮一峰 《ECMAScript 6 入门》 站点目录 1. let/const 2. 字符串 3. 函数 4. 类class基本用法 5. export,import let/const ES6 中新增加了 let 和 const 两个命令，let用于定义变量，const 用于</description>
     </item>
     

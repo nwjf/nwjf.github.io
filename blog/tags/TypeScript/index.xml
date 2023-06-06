@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>TypeScript on nwjf Blog</title>
-    <link>./tags/typescript/</link>
+    <link>/blog/tags/typescript/</link>
     <description>Recent content in TypeScript on nwjf Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Jun 2019 18:36:50 +0000</lastBuildDate><atom:link href="./tags/typescript/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jun 2019 18:36:50 +0000</lastBuildDate><atom:link href="/blog/tags/typescript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TypeScript开发规范</title>
-      <link>./posts/tscodespecification/</link>
+      <link>/blog/posts/tscodespecification/</link>
       <pubDate>Tue, 11 Jun 2019 18:36:50 +0000</pubDate>
       
-      <guid>./posts/tscodespecification/</guid>
+      <guid>/blog/posts/tscodespecification/</guid>
       <description>前言 随着TypeScript 的不断发展，越来越多的开发者认可并使用TypeScript开发应用。 本文的目标是使TypeScript新特性的代码风格保持一致。 由于TypeScript依然在快速发展，也随时保持更新。 最新更新时间2019-6-11 项目规范 项目必须有 README.md 描述文件 项目描述 引</description>
     </item>
     

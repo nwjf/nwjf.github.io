@@ -2,94 +2,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>./about/</loc>
+    <loc>/blog/about/</loc>
     <lastmod>2021-11-06T15:15:53+08:00</lastmod>
   </url><url>
-    <loc>./links/</loc>
+    <loc>/blog/links/</loc>
     <lastmod>2021-11-06T15:15:53+08:00</lastmod>
   </url><url>
-    <loc>./posts/</loc>
+    <loc>/blog/posts/</loc>
     <lastmod>2019-06-26T13:01:11+00:00</lastmod>
   </url><url>
-    <loc>./categories/</loc>
+    <loc>/blog/categories/</loc>
     <lastmod>2019-06-26T13:01:11+00:00</lastmod>
   </url><url>
-    <loc>./tags/javascript/</loc>
+    <loc>/blog/tags/javascript/</loc>
     <lastmod>2019-06-26T13:01:11+00:00</lastmod>
   </url><url>
-    <loc>./</loc>
+    <loc>/blog/</loc>
     <lastmod>2019-06-26T13:01:11+00:00</lastmod>
   </url><url>
-    <loc>./tags/vue/</loc>
+    <loc>/blog/tags/vue/</loc>
     <lastmod>2019-06-26T13:01:11+00:00</lastmod>
   </url><url>
-    <loc>./categories/vue/</loc>
+    <loc>/blog/categories/vue/</loc>
     <lastmod>2019-06-26T13:01:11+00:00</lastmod>
   </url><url>
-    <loc>./posts/vue-7/</loc>
+    <loc>/blog/posts/vue-7/</loc>
     <lastmod>2019-06-26T13:01:11+00:00</lastmod>
   </url><url>
-    <loc>./tags/</loc>
+    <loc>/blog/tags/</loc>
     <lastmod>2019-06-26T13:01:11+00:00</lastmod>
   </url><url>
-    <loc>./tags/typescript/</loc>
+    <loc>/blog/tags/typescript/</loc>
     <lastmod>2019-06-11T18:36:50+00:00</lastmod>
   </url><url>
-    <loc>./posts/tscodespecification/</loc>
+    <loc>/blog/posts/tscodespecification/</loc>
     <lastmod>2019-06-11T18:36:50+00:00</lastmod>
   </url><url>
-    <loc>./tags/%E8%A7%84%E8%8C%83/</loc>
+    <loc>/blog/tags/%E8%A7%84%E8%8C%83/</loc>
     <lastmod>2019-06-11T18:36:50+00:00</lastmod>
   </url><url>
-    <loc>./categories/%E8%A7%84%E8%8C%83/</loc>
+    <loc>/blog/categories/%E8%A7%84%E8%8C%83/</loc>
     <lastmod>2019-06-11T18:36:50+00:00</lastmod>
   </url><url>
-    <loc>./posts/jscodespecification/</loc>
+    <loc>/blog/posts/jscodespecification/</loc>
     <lastmod>2019-06-10T18:36:50+00:00</lastmod>
   </url><url>
-    <loc>./posts/vue3-1/</loc>
+    <loc>/blog/posts/vue3-1/</loc>
     <lastmod>2019-02-15T16:14:13+00:00</lastmod>
   </url><url>
-    <loc>./tags/es6/</loc>
+    <loc>/blog/tags/es6/</loc>
     <lastmod>2018-09-14T11:10:13+00:00</lastmod>
   </url><url>
-    <loc>./tags/es8/</loc>
+    <loc>/blog/tags/es8/</loc>
     <lastmod>2018-09-14T11:10:13+00:00</lastmod>
   </url><url>
-    <loc>./categories/javascript/</loc>
+    <loc>/blog/categories/javascript/</loc>
     <lastmod>2018-09-14T11:10:13+00:00</lastmod>
   </url><url>
-    <loc>./posts/async/</loc>
+    <loc>/blog/posts/async/</loc>
     <lastmod>2018-09-14T11:10:13+00:00</lastmod>
   </url><url>
-    <loc>./tags/%E4%BC%98%E5%8C%96/</loc>
+    <loc>/blog/tags/%E4%BC%98%E5%8C%96/</loc>
     <lastmod>2018-08-13T20:10:13+00:00</lastmod>
   </url><url>
-    <loc>./posts/throttle/</loc>
+    <loc>/blog/posts/throttle/</loc>
     <lastmod>2018-08-13T20:10:13+00:00</lastmod>
   </url><url>
-    <loc>./posts/vue-4/</loc>
+    <loc>/blog/posts/vue-4/</loc>
     <lastmod>2018-05-20T22:14:13+00:00</lastmod>
   </url><url>
-    <loc>./posts/vue-config/</loc>
+    <loc>/blog/posts/vue-config/</loc>
     <lastmod>2018-04-06T12:21:28+00:00</lastmod>
   </url><url>
-    <loc>./tags/es2015/</loc>
+    <loc>/blog/tags/es2015/</loc>
     <lastmod>2018-03-20T08:36:50+00:00</lastmod>
   </url><url>
-    <loc>./posts/es6%E5%85%A5%E9%97%A8/</loc>
+    <loc>/blog/posts/es6%E5%85%A5%E9%97%A8/</loc>
     <lastmod>2018-03-20T08:36:50+00:00</lastmod>
   </url><url>
-    <loc>./archives/</loc>
+    <loc>/blog/archives/</loc>
   </url><url>
-    <loc>./search/</loc>
+    <loc>/blog/search/</loc>
   </url><url>
-    <loc>./series/</loc>
+    <loc>/blog/series/</loc>
   </url><url>
-    <loc>./tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+    <loc>/blog/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
   </url><url>
-    <loc>./categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+    <loc>/blog/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
   </url><url>
-    <loc>./posts/wx2/</loc>
+    <loc>/blog/posts/wx2/</loc>
   </url>
 </urlset>

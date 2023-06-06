@@ -2,89 +2,89 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>🧩 标签 on nwjf Blog</title>
-    <link>./tags/</link>
+    <link>/blog/tags/</link>
     <description>Recent content in 🧩 标签 on nwjf Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 26 Jun 2019 13:01:11 +0000</lastBuildDate><atom:link href="./tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jun 2019 13:01:11 +0000</lastBuildDate><atom:link href="/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JavaScript</title>
-      <link>./tags/javascript/</link>
+      <link>/blog/tags/javascript/</link>
       <pubDate>Wed, 26 Jun 2019 13:01:11 +0000</pubDate>
       
-      <guid>./tags/javascript/</guid>
+      <guid>/blog/tags/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vue</title>
-      <link>./tags/vue/</link>
+      <link>/blog/tags/vue/</link>
       <pubDate>Wed, 26 Jun 2019 13:01:11 +0000</pubDate>
       
-      <guid>./tags/vue/</guid>
+      <guid>/blog/tags/vue/</guid>
       <description></description>
     </item>
     
     <item>
       <title>TypeScript</title>
-      <link>./tags/typescript/</link>
+      <link>/blog/tags/typescript/</link>
       <pubDate>Tue, 11 Jun 2019 18:36:50 +0000</pubDate>
       
-      <guid>./tags/typescript/</guid>
+      <guid>/blog/tags/typescript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>规范</title>
-      <link>./tags/%E8%A7%84%E8%8C%83/</link>
+      <link>/blog/tags/%E8%A7%84%E8%8C%83/</link>
       <pubDate>Tue, 11 Jun 2019 18:36:50 +0000</pubDate>
       
-      <guid>./tags/%E8%A7%84%E8%8C%83/</guid>
+      <guid>/blog/tags/%E8%A7%84%E8%8C%83/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ES6</title>
-      <link>./tags/es6/</link>
+      <link>/blog/tags/es6/</link>
       <pubDate>Fri, 14 Sep 2018 11:10:13 +0000</pubDate>
       
-      <guid>./tags/es6/</guid>
+      <guid>/blog/tags/es6/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ES8</title>
-      <link>./tags/es8/</link>
+      <link>/blog/tags/es8/</link>
       <pubDate>Fri, 14 Sep 2018 11:10:13 +0000</pubDate>
       
-      <guid>./tags/es8/</guid>
+      <guid>/blog/tags/es8/</guid>
       <description></description>
     </item>
     
     <item>
       <title>优化</title>
-      <link>./tags/%E4%BC%98%E5%8C%96/</link>
+      <link>/blog/tags/%E4%BC%98%E5%8C%96/</link>
       <pubDate>Mon, 13 Aug 2018 20:10:13 +0000</pubDate>
       
-      <guid>./tags/%E4%BC%98%E5%8C%96/</guid>
+      <guid>/blog/tags/%E4%BC%98%E5%8C%96/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ES2015</title>
-      <link>./tags/es2015/</link>
+      <link>/blog/tags/es2015/</link>
       <pubDate>Tue, 20 Mar 2018 08:36:50 +0000</pubDate>
       
-      <guid>./tags/es2015/</guid>
+      <guid>/blog/tags/es2015/</guid>
       <description></description>
     </item>
     
     <item>
       <title>微信小程序</title>
-      <link>./tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
+      <link>/blog/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>./tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</guid>
+      <guid>/blog/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</guid>
       <description></description>
     </item>
     
