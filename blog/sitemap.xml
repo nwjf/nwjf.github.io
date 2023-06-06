@@ -2,94 +2,94 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://xyming108.github.io/about/</loc>
+    <loc>./about/</loc>
     <lastmod>2021-11-06T15:15:53+08:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/links/</loc>
+    <loc>./links/</loc>
     <lastmod>2021-11-06T15:15:53+08:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/posts/</loc>
+    <loc>./posts/</loc>
     <lastmod>2019-06-26T13:01:11+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/categories/</loc>
+    <loc>./categories/</loc>
     <lastmod>2019-06-26T13:01:11+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/tags/javascript/</loc>
+    <loc>./tags/javascript/</loc>
     <lastmod>2019-06-26T13:01:11+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/</loc>
+    <loc>./</loc>
     <lastmod>2019-06-26T13:01:11+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/tags/vue/</loc>
+    <loc>./tags/vue/</loc>
     <lastmod>2019-06-26T13:01:11+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/categories/vue/</loc>
+    <loc>./categories/vue/</loc>
     <lastmod>2019-06-26T13:01:11+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/posts/vue-7/</loc>
+    <loc>./posts/vue-7/</loc>
     <lastmod>2019-06-26T13:01:11+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/tags/</loc>
+    <loc>./tags/</loc>
     <lastmod>2019-06-26T13:01:11+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/tags/typescript/</loc>
+    <loc>./tags/typescript/</loc>
     <lastmod>2019-06-11T18:36:50+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/posts/tscodespecification/</loc>
+    <loc>./posts/tscodespecification/</loc>
     <lastmod>2019-06-11T18:36:50+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/tags/%E8%A7%84%E8%8C%83/</loc>
+    <loc>./tags/%E8%A7%84%E8%8C%83/</loc>
     <lastmod>2019-06-11T18:36:50+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/categories/%E8%A7%84%E8%8C%83/</loc>
+    <loc>./categories/%E8%A7%84%E8%8C%83/</loc>
     <lastmod>2019-06-11T18:36:50+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/posts/jscodespecification/</loc>
+    <loc>./posts/jscodespecification/</loc>
     <lastmod>2019-06-10T18:36:50+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/posts/vue3-1/</loc>
+    <loc>./posts/vue3-1/</loc>
     <lastmod>2019-02-15T16:14:13+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/tags/es6/</loc>
+    <loc>./tags/es6/</loc>
     <lastmod>2018-09-14T11:10:13+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/tags/es8/</loc>
+    <loc>./tags/es8/</loc>
     <lastmod>2018-09-14T11:10:13+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/categories/javascript/</loc>
+    <loc>./categories/javascript/</loc>
     <lastmod>2018-09-14T11:10:13+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/posts/async/</loc>
+    <loc>./posts/async/</loc>
     <lastmod>2018-09-14T11:10:13+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/tags/%E4%BC%98%E5%8C%96/</loc>
+    <loc>./tags/%E4%BC%98%E5%8C%96/</loc>
     <lastmod>2018-08-13T20:10:13+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/posts/throttle/</loc>
+    <loc>./posts/throttle/</loc>
     <lastmod>2018-08-13T20:10:13+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/posts/vue-4/</loc>
+    <loc>./posts/vue-4/</loc>
     <lastmod>2018-05-20T22:14:13+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/posts/vue-config/</loc>
+    <loc>./posts/vue-config/</loc>
     <lastmod>2018-04-06T12:21:28+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/tags/es2015/</loc>
+    <loc>./tags/es2015/</loc>
     <lastmod>2018-03-20T08:36:50+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/posts/es6%E5%85%A5%E9%97%A8/</loc>
+    <loc>./posts/es6%E5%85%A5%E9%97%A8/</loc>
     <lastmod>2018-03-20T08:36:50+00:00</lastmod>
   </url><url>
-    <loc>https://xyming108.github.io/archives/</loc>
+    <loc>./archives/</loc>
   </url><url>
-    <loc>https://xyming108.github.io/search/</loc>
+    <loc>./search/</loc>
   </url><url>
-    <loc>https://xyming108.github.io/series/</loc>
+    <loc>./series/</loc>
   </url><url>
-    <loc>https://xyming108.github.io/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+    <loc>./tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
   </url><url>
-    <loc>https://xyming108.github.io/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
+    <loc>./categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
   </url><url>
-    <loc>https://xyming108.github.io/posts/wx2/</loc>
+    <loc>./posts/wx2/</loc>
   </url>
 </urlset>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>优化 on nwjf Blog</title>
-    <link>https://xyming108.github.io/tags/%E4%BC%98%E5%8C%96/</link>
+    <link>./tags/%E4%BC%98%E5%8C%96/</link>
     <description>Recent content in 优化 on nwjf Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 13 Aug 2018 20:10:13 +0000</lastBuildDate><atom:link href="https://xyming108.github.io/tags/%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Aug 2018 20:10:13 +0000</lastBuildDate><atom:link href="./tags/%E4%BC%98%E5%8C%96/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>优化之路-js函数防抖与函数节流</title>
-      <link>https://xyming108.github.io/posts/throttle/</link>
+      <link>./posts/throttle/</link>
       <pubDate>Mon, 13 Aug 2018 20:10:13 +0000</pubDate>
       
-      <guid>https://xyming108.github.io/posts/throttle/</guid>
+      <guid>./posts/throttle/</guid>
       <description>函数防抖（debounce） 函数防抖是在函数节流的基础上，每隔固定的时间，不管定时器触发没触发，都会执行一遍自定义函数。 单反也有相似的概念，在拍照的时候手如果拿不稳晃的时候拍照一般手机是拍不出好照片的，因此智能手机是在你按一下时连续拍许多张， 能过合成手段，生成一张。翻译成JS就是</description>
     </item>
     

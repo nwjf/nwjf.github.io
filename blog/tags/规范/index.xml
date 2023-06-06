@@ -2,26 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>规范 on nwjf Blog</title>
-    <link>https://xyming108.github.io/tags/%E8%A7%84%E8%8C%83/</link>
+    <link>./tags/%E8%A7%84%E8%8C%83/</link>
     <description>Recent content in 规范 on nwjf Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 11 Jun 2019 18:36:50 +0000</lastBuildDate><atom:link href="https://xyming108.github.io/tags/%E8%A7%84%E8%8C%83/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jun 2019 18:36:50 +0000</lastBuildDate><atom:link href="./tags/%E8%A7%84%E8%8C%83/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TypeScript开发规范</title>
-      <link>https://xyming108.github.io/posts/tscodespecification/</link>
+      <link>./posts/tscodespecification/</link>
       <pubDate>Tue, 11 Jun 2019 18:36:50 +0000</pubDate>
       
-      <guid>https://xyming108.github.io/posts/tscodespecification/</guid>
+      <guid>./posts/tscodespecification/</guid>
       <description>前言 随着TypeScript 的不断发展，越来越多的开发者认可并使用TypeScript开发应用。 本文的目标是使TypeScript新特性的代码风格保持一致。 由于TypeScript依然在快速发展，也随时保持更新。 最新更新时间2019-6-11 项目规范 项目必须有 README.md 描述文件 项目描述 引</description>
     </item>
     
     <item>
       <title>JavaScript开发规范</title>
-      <link>https://xyming108.github.io/posts/jscodespecification/</link>
+      <link>./posts/jscodespecification/</link>
       <pubDate>Mon, 10 Jun 2019 18:36:50 +0000</pubDate>
       
-      <guid>https://xyming108.github.io/posts/jscodespecification/</guid>
+      <guid>./posts/jscodespecification/</guid>
       <description>前言 本文档的目标是JavaScript代码风格保持一致，容易被理解和被维护。 项目规范 项目必须有 README.md 描述文件 项目描述 引用技术描述 代码风格描述 目录结构 运行环境 开发命令，运行命令，以及其他命令 复杂流程介绍等 代码风格 建议JavaScript使用无BOM的UTF-8编码 建议在文件结尾处保留一</description>
     </item>
     

@@ -2,44 +2,44 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>vue on nwjf Blog</title>
-    <link>https://xyming108.github.io/categories/vue/</link>
+    <link>./categories/vue/</link>
     <description>Recent content in vue on nwjf Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 26 Jun 2019 13:01:11 +0000</lastBuildDate><atom:link href="https://xyming108.github.io/categories/vue/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jun 2019 13:01:11 +0000</lastBuildDate><atom:link href="./categories/vue/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Vue(六) -- v-model</title>
-      <link>https://xyming108.github.io/posts/vue-7/</link>
+      <link>./posts/vue-7/</link>
       <pubDate>Wed, 26 Jun 2019 13:01:11 +0000</pubDate>
       
-      <guid>https://xyming108.github.io/posts/vue-7/</guid>
+      <guid>./posts/vue-7/</guid>
       <description>vue数据是双向绑定对开发者带来了不少的便利， 而父子组件之间的通信却是单向数据流， v-model命令 v-model是Vue用于表单元素上创建双向数据绑定，它本质是一个语法糖，在单向数据绑定的基础上，增加了监听用户输入事件并更新数据的功能 v-model命令 是v-bind:value</description>
     </item>
     
     <item>
       <title>Vue(五) -- vue-cli(3.x)</title>
-      <link>https://xyming108.github.io/posts/vue3-1/</link>
+      <link>./posts/vue3-1/</link>
       <pubDate>Fri, 15 Feb 2019 16:14:13 +0000</pubDate>
       
-      <guid>https://xyming108.github.io/posts/vue3-1/</guid>
+      <guid>./posts/vue3-1/</guid>
       <description>不知不觉中vue-cli都升级到3.x了，赶快看下文档来学习下 第一步升级 vue cli 要求node 8+ node方面就不在做详细解答。 npm install -g @vue/cli # OR yarn global add @vue/cli # 检查版本 vue --version 具体结果就不在展示，直接进入下一步 创建项目 3.x给出了多种创建项目的方法， vue create demo Vue CLI v3.1.0 ? Please pick a preset: (Use arrow keys) &amp;gt; default (babel, eslint) Manually select features 使用上下键</description>
     </item>
     
     <item>
       <title>Vue(四) -- 组件</title>
-      <link>https://xyming108.github.io/posts/vue-4/</link>
+      <link>./posts/vue-4/</link>
       <pubDate>Sun, 20 May 2018 22:14:13 +0000</pubDate>
       
-      <guid>https://xyming108.github.io/posts/vue-4/</guid>
+      <guid>./posts/vue-4/</guid>
       <description>什么是vue组件： 组件（Component）是 Vue.js 最强大的功能之一。 组件可以扩展 HTML 元素，封装可重用的代码。 下面全部按照分开试写法讲解，分开与不分开写都一样， vue中组件同样具有三部分（template, script, style）组成以.vue结尾文件。 注册组件 全局注册 全局注册的组件可以用在其被</description>
     </item>
     
     <item>
       <title>Vue(二) -- 项目配置</title>
-      <link>https://xyming108.github.io/posts/vue-config/</link>
+      <link>./posts/vue-config/</link>
       <pubDate>Fri, 06 Apr 2018 12:21:28 +0000</pubDate>
       
-      <guid>https://xyming108.github.io/posts/vue-config/</guid>
+      <guid>./posts/vue-config/</guid>
       <description>上一篇讲解了vue-cli的使用，这一片讲解vue项目的配置文件，如果还不会vue-cli构建项目的，请先阅读Vue入坑之路(一) &amp;ndash; vue-cli 文档链接 npm 文档 Vue.js中文文档 Vue-webpack配置文档 npm 配置 - package.json package.json json文件不支持注释，请不要在json中注释， { &amp;#34;name&amp;#34;: &amp;#34;vue-demo&amp;#34;, // 项目名称 &amp;#34;version&amp;#34;: &amp;#34;1.0.0&amp;#34;, //</description>
     </item>
     
