@@ -6,29 +6,29 @@
     <description>Recent content in Categories on nwjf Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 26 Jun 2019 13:01:11 +0000</lastBuildDate><atom:link href="/blog/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>vue</title>
-      <link>/blog/categories/vue/</link>
-      <pubDate>Wed, 26 Jun 2019 13:01:11 +0000</pubDate>
-      
-      <guid>/blog/categories/vue/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Tue, 10 Dec 2019 18:36:50 +0000</lastBuildDate><atom:link href="/blog/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>规范</title>
       <link>/blog/categories/%E8%A7%84%E8%8C%83/</link>
-      <pubDate>Tue, 11 Jun 2019 18:36:50 +0000</pubDate>
+      <pubDate>Tue, 10 Dec 2019 18:36:50 +0000</pubDate>
       
       <guid>/blog/categories/%E8%A7%84%E8%8C%83/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>vue</title>
+      <link>/blog/categories/vue/</link>
+      <pubDate>Tue, 15 Oct 2019 16:14:13 +0000</pubDate>
+      
+      <guid>/blog/categories/vue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>JavaScript</title>
       <link>/blog/categories/javascript/</link>
-      <pubDate>Fri, 14 Sep 2018 11:10:13 +0000</pubDate>
+      <pubDate>Fri, 13 Apr 2018 20:10:13 +0000</pubDate>
       
       <guid>/blog/categories/javascript/</guid>
       <description></description>

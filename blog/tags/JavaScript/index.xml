@@ -6,86 +6,113 @@
     <description>Recent content in JavaScript on nwjf Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 26 Jun 2019 13:01:11 +0000</lastBuildDate><atom:link href="/blog/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Vue(六) -- v-model</title>
-      <link>/blog/posts/vue-7/</link>
-      <pubDate>Wed, 26 Jun 2019 13:01:11 +0000</pubDate>
-      
-      <guid>/blog/posts/vue-7/</guid>
-      <description>vue数据是双向绑定对开发者带来了不少的便利， 而父子组件之间的通信却是单向数据流， v-model命令 v-model是Vue用于表单元素上创建双向数据绑定，它本质是一个语法糖，在单向数据绑定的基础上，增加了监听用户输入事件并更新数据的功能 v-model命令 是v-bind:value</description>
-    </item>
-    
-    <item>
-      <title>TypeScript开发规范</title>
-      <link>/blog/posts/tscodespecification/</link>
-      <pubDate>Tue, 11 Jun 2019 18:36:50 +0000</pubDate>
-      
-      <guid>/blog/posts/tscodespecification/</guid>
-      <description>前言 随着TypeScript 的不断发展，越来越多的开发者认可并使用TypeScript开发应用。 本文的目标是使TypeScript新特性的代码风格保持一致。 由于TypeScript依然在快速发展，也随时保持更新。 最新更新时间2019-6-11 项目规范 项目必须有 README.md 描述文件 项目描述 引</description>
-    </item>
-    
+    <lastBuildDate>Tue, 10 Dec 2019 18:36:50 +0000</lastBuildDate><atom:link href="/blog/tags/javascript/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JavaScript开发规范</title>
-      <link>/blog/posts/jscodespecification/</link>
-      <pubDate>Mon, 10 Jun 2019 18:36:50 +0000</pubDate>
+      <link>/blog/posts/codespecification-js/</link>
+      <pubDate>Tue, 10 Dec 2019 18:36:50 +0000</pubDate>
       
-      <guid>/blog/posts/jscodespecification/</guid>
+      <guid>/blog/posts/codespecification-js/</guid>
       <description>前言 本文档的目标是JavaScript代码风格保持一致，容易被理解和被维护。 项目规范 项目必须有 README.md 描述文件 项目描述 引用技术描述 代码风格描述 目录结构 运行环境 开发命令，运行命令，以及其他命令 复杂流程介绍等 代码风格 建议JavaScript使用无BOM的UTF-8编码 建议在文件结尾处保留一</description>
     </item>
     
     <item>
-      <title>Vue(五) -- vue-cli(3.x)</title>
-      <link>/blog/posts/vue3-1/</link>
-      <pubDate>Fri, 15 Feb 2019 16:14:13 +0000</pubDate>
+      <title>TypeScript开发规范</title>
+      <link>/blog/posts/codespecification-ts/</link>
+      <pubDate>Mon, 11 Nov 2019 18:36:50 +0000</pubDate>
       
-      <guid>/blog/posts/vue3-1/</guid>
+      <guid>/blog/posts/codespecification-ts/</guid>
+      <description>前言 随着TypeScript 的不断发展，越来越多的开发者认可并使用TypeScript开发应用。 本文的目标是使TypeScript新特性的代码风格保持一致。 由于TypeScript依然在快速发展，也随时保持更新。 最新更新时间2019-6-11 项目规范 项目必须有 README.md 描述文件 项目描述 引</description>
+    </item>
+    
+    <item>
+      <title>vue-cli(3.x)</title>
+      <link>/blog/posts/vuecli3x/</link>
+      <pubDate>Tue, 15 Oct 2019 16:14:13 +0000</pubDate>
+      
+      <guid>/blog/posts/vuecli3x/</guid>
       <description>不知不觉中vue-cli都升级到3.x了，赶快看下文档来学习下 第一步升级 vue cli 要求node 8+ node方面就不在做详细解答。 npm install -g @vue/cli # OR yarn global add @vue/cli # 检查版本 vue --version 具体结果就不在展示，直接进入下一步 创建项目 3.x给出了多种创建项目的方法， vue create demo Vue CLI v3.1.0 ? Please pick a preset: (Use arrow keys) &amp;gt; default (babel, eslint) Manually select features 使用上下键</description>
     </item>
     
     <item>
-      <title>js异步 -- Promise 与 Async / Await</title>
-      <link>/blog/posts/async/</link>
-      <pubDate>Fri, 14 Sep 2018 11:10:13 +0000</pubDate>
+      <title>Vue(2.x) -- 组件</title>
+      <link>/blog/posts/vue2x-3/</link>
+      <pubDate>Mon, 20 Aug 2018 22:14:13 +0000</pubDate>
       
-      <guid>/blog/posts/async/</guid>
-      <description>Promise 简介: Promise 是异步编程的一种解决方案 ES6 规定，Promise对象是一个构造函数，用来生成Promise实例。 Promise 一般用于网络和 I/O 操作，比如读取文件，或者创建 HTTP 请求。我们可以创建异步 promise，然后用 then 添加一个回调函数，当 promise 结束后会触发这个回调函数，而非阻塞住当前“线程”。回调函数本</description>
+      <guid>/blog/posts/vue2x-3/</guid>
+      <description>什么是vue组件： 组件（Component）是 Vue.js 最强大的功能之一。 组件可以扩展 HTML 元素，封装可重用的代码。 下面全部按照分开试写法讲解，分开与不分开写都一样， vue中组件同样具有三部分（template, script, style）组成以.vue结尾文件。 注册组件 全局注册 全局注册的组件可以用在其被</description>
+    </item>
+    
+    <item>
+      <title>Vue(2.x) -- vue生命周期钩子</title>
+      <link>/blog/posts/vue2x-2/</link>
+      <pubDate>Sun, 08 Jul 2018 22:36:17 +0000</pubDate>
+      
+      <guid>/blog/posts/vue2x-2/</guid>
+      <description>生命周期：Vue 实例从开始创建、初始化数据、编译模板、挂载Dom→渲染、更新→渲染、卸载等一系列过程，我们称这是 Vue 的生命周期，各个阶段有相对应的事件钩子 vue生命周期钩子图 为了让更清楚了解vue的生命周期钩子，把所有钩子写成表格， 生命周期钩子 组件介绍 说明 beforeCreate 在实例初始化之后。thi</description>
+    </item>
+    
+    <item>
+      <title>Vue(2.x) -- 项目配置 (cli 2.x)</title>
+      <link>/blog/posts/vue2x-1/</link>
+      <pubDate>Wed, 06 Jun 2018 12:21:28 +0000</pubDate>
+      
+      <guid>/blog/posts/vue2x-1/</guid>
+      <description>上一篇讲解了vue-cli的使用，这一片讲解vue项目的配置文件，如果还不会vue-cli构建项目的，请先阅读Vue入坑之路(一) &amp;ndash; vue-cli 文档链接 npm 文档 Vue.js中文文档 Vue-webpack配置文档 npm 配置 - package.json package.json json文件不支持注释，请不要在json中注释， { &amp;#34;name&amp;#34;: &amp;#34;vue-demo&amp;#34;, // 项目名称 &amp;#34;version&amp;#34;: &amp;#34;1.0.0&amp;#34;, //</description>
+    </item>
+    
+    <item>
+      <title>vue-cli(2.x)</title>
+      <link>/blog/posts/vuecli2x/</link>
+      <pubDate>Wed, 02 May 2018 22:14:13 +0000</pubDate>
+      
+      <guid>/blog/posts/vuecli2x/</guid>
+      <description>欢迎访问我的博客 关于vue的第一篇文章写了vue-cli，后续文章中会详细介绍vue的用法，以及VUEX的使用方法，esLint,webpack,源码等详细文章，欢迎浏览。 vue-cli 是一个官方发布 vue.js 项目脚手架，使用 vue-cli 可以快速创建 vue 项目，GitHub地址是：vue-cli 一、node.js</description>
     </item>
     
     <item>
       <title>优化之路-js函数防抖与函数节流</title>
       <link>/blog/posts/throttle/</link>
-      <pubDate>Mon, 13 Aug 2018 20:10:13 +0000</pubDate>
+      <pubDate>Fri, 13 Apr 2018 20:10:13 +0000</pubDate>
       
       <guid>/blog/posts/throttle/</guid>
       <description>函数防抖（debounce） 函数防抖是在函数节流的基础上，每隔固定的时间，不管定时器触发没触发，都会执行一遍自定义函数。 单反也有相似的概念，在拍照的时候手如果拿不稳晃的时候拍照一般手机是拍不出好照片的，因此智能手机是在你按一下时连续拍许多张， 能过合成手段，生成一张。翻译成JS就是</description>
     </item>
     
     <item>
-      <title>Vue(四) -- 组件</title>
-      <link>/blog/posts/vue-4/</link>
-      <pubDate>Sun, 20 May 2018 22:14:13 +0000</pubDate>
+      <title>replace方法深入学习</title>
+      <link>/blog/posts/replace/</link>
+      <pubDate>Sat, 03 Mar 2018 22:27:43 +0000</pubDate>
       
-      <guid>/blog/posts/vue-4/</guid>
-      <description>什么是vue组件： 组件（Component）是 Vue.js 最强大的功能之一。 组件可以扩展 HTML 元素，封装可重用的代码。 下面全部按照分开试写法讲解，分开与不分开写都一样， vue中组件同样具有三部分（template, script, style）组成以.vue结尾文件。 注册组件 全局注册 全局注册的组件可以用在其被</description>
-    </item>
-    
-    <item>
-      <title>Vue(二) -- 项目配置</title>
-      <link>/blog/posts/vue-config/</link>
-      <pubDate>Fri, 06 Apr 2018 12:21:28 +0000</pubDate>
-      
-      <guid>/blog/posts/vue-config/</guid>
-      <description>上一篇讲解了vue-cli的使用，这一片讲解vue项目的配置文件，如果还不会vue-cli构建项目的，请先阅读Vue入坑之路(一) &amp;ndash; vue-cli 文档链接 npm 文档 Vue.js中文文档 Vue-webpack配置文档 npm 配置 - package.json package.json json文件不支持注释，请不要在json中注释， { &amp;#34;name&amp;#34;: &amp;#34;vue-demo&amp;#34;, // 项目名称 &amp;#34;version&amp;#34;: &amp;#34;1.0.0&amp;#34;, //</description>
+      <guid>/blog/posts/replace/</guid>
+      <description>前几天朋友问到一个聊天系统，需要代替 [表情] ,趁这次机会仔细研究了replace方法,分享下js的replace用法。 初级篇 replace() 方法用于在字符串中用一些字符替换另一些字符，或替换一个与正则表达式匹配的子串。 let strObj = &amp;#39;hello word&amp;#39;; let str = strObj.replace(&amp;#39;l&amp;#39;, &amp;#39;A&amp;#39;); console.log(strObj); // hello word console.log(str); // heAlo word 代码中只将第一个l代替成A，如果想全部替</description>
     </item>
     
     <item>
       <title>你必须要懂的 ES6 语法</title>
-      <link>/blog/posts/es6%E5%85%A5%E9%97%A8/</link>
-      <pubDate>Tue, 20 Mar 2018 08:36:50 +0000</pubDate>
+      <link>/blog/posts/es6/</link>
+      <pubDate>Tue, 20 Feb 2018 08:36:50 +0000</pubDate>
       
-      <guid>/blog/posts/es6%E5%85%A5%E9%97%A8/</guid>
+      <guid>/blog/posts/es6/</guid>
       <description>简介 ECMAScript 6.0 (简称ES6) ，ES6 的第一个版本，在 2015 年 6 月发布，正式名称就是《ECMAScript 2015 标准》（简称 ES2015）。 参考 阮一峰 《ECMAScript 6 入门》 站点目录 1. let/const 2. 字符串 3. 函数 4. 类class基本用法 5. export,import let/const ES6 中新增加了 let 和 const 两个命令，let用于定义变量，const 用于</description>
+    </item>
+    
+    <item>
+      <title>js异步 -- Promise 与 Async / Await</title>
+      <link>/blog/posts/async/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/posts/async/</guid>
+      <description>Promise 简介: Promise 是异步编程的一种解决方案 ES6 规定，Promise对象是一个构造函数，用来生成Promise实例。 Promise 一般用于网络和 I/O 操作，比如读取文件，或者创建 HTTP 请求。我们可以创建异步 promise，然后用 then 添加一个回调函数，当 promise 结束后会触发这个回调函数，而非阻塞住当前“线程”。回调函数本</description>
+    </item>
+    
+    <item>
+      <title>Vue(2.x) -- v-model详解</title>
+      <link>/blog/posts/vue2x-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/posts/vue2x-4/</guid>
+      <description>vue数据是双向绑定对开发者带来了不少的便利， 而父子组件之间的通信却是单向数据流， v-model命令 v-model是Vue用于表单元素上创建双向数据绑定，它本质是一个语法糖，在单向数据绑定的基础上，增加了监听用户输入事件并更新数据的功能 v-model命令 是v-bind:value</description>
     </item>
     
     <item>

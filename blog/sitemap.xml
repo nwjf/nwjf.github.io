@@ -8,88 +8,94 @@
     <loc>/blog/links/</loc>
     <lastmod>2021-11-06T15:15:53+08:00</lastmod>
   </url><url>
-    <loc>/blog/posts/</loc>
-    <lastmod>2019-06-26T13:01:11+00:00</lastmod>
-  </url><url>
     <loc>/blog/categories/</loc>
-    <lastmod>2019-06-26T13:01:11+00:00</lastmod>
+    <lastmod>2019-12-10T18:36:50+00:00</lastmod>
   </url><url>
     <loc>/blog/tags/javascript/</loc>
-    <lastmod>2019-06-26T13:01:11+00:00</lastmod>
+    <lastmod>2019-12-10T18:36:50+00:00</lastmod>
+  </url><url>
+    <loc>/blog/posts/codespecification-js/</loc>
+    <lastmod>2019-12-10T18:36:50+00:00</lastmod>
   </url><url>
     <loc>/blog/</loc>
-    <lastmod>2019-06-26T13:01:11+00:00</lastmod>
+    <lastmod>2019-12-10T18:36:50+00:00</lastmod>
   </url><url>
-    <loc>/blog/tags/vue/</loc>
-    <lastmod>2019-06-26T13:01:11+00:00</lastmod>
-  </url><url>
-    <loc>/blog/categories/vue/</loc>
-    <lastmod>2019-06-26T13:01:11+00:00</lastmod>
-  </url><url>
-    <loc>/blog/posts/vue-7/</loc>
-    <lastmod>2019-06-26T13:01:11+00:00</lastmod>
-  </url><url>
-    <loc>/blog/tags/</loc>
-    <lastmod>2019-06-26T13:01:11+00:00</lastmod>
-  </url><url>
-    <loc>/blog/tags/typescript/</loc>
-    <lastmod>2019-06-11T18:36:50+00:00</lastmod>
-  </url><url>
-    <loc>/blog/posts/tscodespecification/</loc>
-    <lastmod>2019-06-11T18:36:50+00:00</lastmod>
+    <loc>/blog/posts/</loc>
+    <lastmod>2019-12-10T18:36:50+00:00</lastmod>
   </url><url>
     <loc>/blog/tags/%E8%A7%84%E8%8C%83/</loc>
-    <lastmod>2019-06-11T18:36:50+00:00</lastmod>
+    <lastmod>2019-12-10T18:36:50+00:00</lastmod>
   </url><url>
     <loc>/blog/categories/%E8%A7%84%E8%8C%83/</loc>
-    <lastmod>2019-06-11T18:36:50+00:00</lastmod>
+    <lastmod>2019-12-10T18:36:50+00:00</lastmod>
   </url><url>
-    <loc>/blog/posts/jscodespecification/</loc>
-    <lastmod>2019-06-10T18:36:50+00:00</lastmod>
+    <loc>/blog/tags/</loc>
+    <lastmod>2019-12-10T18:36:50+00:00</lastmod>
   </url><url>
-    <loc>/blog/posts/vue3-1/</loc>
-    <lastmod>2019-02-15T16:14:13+00:00</lastmod>
+    <loc>/blog/tags/typescript/</loc>
+    <lastmod>2019-11-11T18:36:50+00:00</lastmod>
   </url><url>
-    <loc>/blog/tags/es6/</loc>
-    <lastmod>2018-09-14T11:10:13+00:00</lastmod>
+    <loc>/blog/posts/codespecification-ts/</loc>
+    <lastmod>2019-11-11T18:36:50+00:00</lastmod>
   </url><url>
-    <loc>/blog/tags/es8/</loc>
-    <lastmod>2018-09-14T11:10:13+00:00</lastmod>
+    <loc>/blog/tags/vue/</loc>
+    <lastmod>2019-10-15T16:14:13+00:00</lastmod>
+  </url><url>
+    <loc>/blog/categories/vue/</loc>
+    <lastmod>2019-10-15T16:14:13+00:00</lastmod>
+  </url><url>
+    <loc>/blog/posts/vuecli3x/</loc>
+    <lastmod>2019-10-15T16:14:13+00:00</lastmod>
+  </url><url>
+    <loc>/blog/posts/vue2x-3/</loc>
+    <lastmod>2018-08-20T22:14:13+00:00</lastmod>
+  </url><url>
+    <loc>/blog/posts/vue2x-2/</loc>
+    <lastmod>2018-07-08T22:36:17+00:00</lastmod>
+  </url><url>
+    <loc>/blog/posts/vue2x-1/</loc>
+    <lastmod>2018-06-06T12:21:28+00:00</lastmod>
+  </url><url>
+    <loc>/blog/posts/vuecli2x/</loc>
+    <lastmod>2018-05-02T22:14:13+00:00</lastmod>
   </url><url>
     <loc>/blog/categories/javascript/</loc>
-    <lastmod>2018-09-14T11:10:13+00:00</lastmod>
-  </url><url>
-    <loc>/blog/posts/async/</loc>
-    <lastmod>2018-09-14T11:10:13+00:00</lastmod>
+    <lastmod>2018-04-13T20:10:13+00:00</lastmod>
   </url><url>
     <loc>/blog/tags/%E4%BC%98%E5%8C%96/</loc>
-    <lastmod>2018-08-13T20:10:13+00:00</lastmod>
+    <lastmod>2018-04-13T20:10:13+00:00</lastmod>
   </url><url>
     <loc>/blog/posts/throttle/</loc>
-    <lastmod>2018-08-13T20:10:13+00:00</lastmod>
+    <lastmod>2018-04-13T20:10:13+00:00</lastmod>
   </url><url>
-    <loc>/blog/posts/vue-4/</loc>
-    <lastmod>2018-05-20T22:14:13+00:00</lastmod>
-  </url><url>
-    <loc>/blog/posts/vue-config/</loc>
-    <lastmod>2018-04-06T12:21:28+00:00</lastmod>
+    <loc>/blog/posts/replace/</loc>
+    <lastmod>2018-03-03T22:27:43+00:00</lastmod>
   </url><url>
     <loc>/blog/tags/es2015/</loc>
-    <lastmod>2018-03-20T08:36:50+00:00</lastmod>
+    <lastmod>2018-02-20T08:36:50+00:00</lastmod>
   </url><url>
-    <loc>/blog/posts/es6%E5%85%A5%E9%97%A8/</loc>
-    <lastmod>2018-03-20T08:36:50+00:00</lastmod>
+    <loc>/blog/tags/es6/</loc>
+    <lastmod>2018-02-20T08:36:50+00:00</lastmod>
   </url><url>
-    <loc>/blog/archives/</loc>
+    <loc>/blog/posts/es6/</loc>
+    <lastmod>2018-02-20T08:36:50+00:00</lastmod>
   </url><url>
     <loc>/blog/search/</loc>
   </url><url>
+    <loc>/blog/tags/es8/</loc>
+  </url><url>
+    <loc>/blog/posts/async/</loc>
+  </url><url>
     <loc>/blog/series/</loc>
+  </url><url>
+    <loc>/blog/posts/vue2x-4/</loc>
   </url><url>
     <loc>/blog/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
   </url><url>
     <loc>/blog/categories/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F/</loc>
   </url><url>
     <loc>/blog/posts/wx2/</loc>
+  </url><url>
+    <loc>/blog/archives/</loc>
   </url>
 </urlset>

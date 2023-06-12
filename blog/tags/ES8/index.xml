@@ -5,12 +5,11 @@
     <link>/blog/tags/es8/</link>
     <description>Recent content in ES8 on nwjf Blog</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
-    <lastBuildDate>Fri, 14 Sep 2018 11:10:13 +0000</lastBuildDate><atom:link href="/blog/tags/es8/index.xml" rel="self" type="application/rss+xml" />
+    <language>zh-cn</language><atom:link href="/blog/tags/es8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>js异步 -- Promise 与 Async / Await</title>
       <link>/blog/posts/async/</link>
-      <pubDate>Fri, 14 Sep 2018 11:10:13 +0000</pubDate>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/blog/posts/async/</guid>
       <description>Promise 简介: Promise 是异步编程的一种解决方案 ES6 规定，Promise对象是一个构造函数，用来生成Promise实例。 Promise 一般用于网络和 I/O 操作，比如读取文件，或者创建 HTTP 请求。我们可以创建异步 promise，然后用 then 添加一个回调函数，当 promise 结束后会触发这个回调函数，而非阻塞住当前“线程”。回调函数本</description>
