@@ -1,1 +1,0 @@
-import{d as o,o as n,c as s,b as e,t as a,u as i,j as r}from"./index-94a885e2.js";const c=e("div",{style:{"text-align":"center","font-size":"40px","margin-top":"40px"}},"home",-1),p={style:{"text-align":"center","font-size":"40px","margin-top":"40px"}},u=o({__name:"Home",setup(_){const{path:t}=r();return(l,m)=>(n(),s("div",null,[c,e("div",p,a(i(t)),1)]))}});export{u as default};
