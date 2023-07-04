@@ -13,7 +13,11 @@ body {
   min-height: 100%;
   overflow: hidden;
 }
-.home-warp { width: 100%; height: 100%; }
+.home-warp {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
 .home-bg { width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1; }
 .home-bg img { width: 100%; height: 100%; object-fit: cover; }
 .home-bg::after {
@@ -24,7 +28,7 @@ body {
   position: absolute;
   top: 50%;
   left: 0;
-  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1));
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, .8));
 }
 
 .home-content {
@@ -34,6 +38,7 @@ body {
   max-width: 1200px;
   margin: auto;
   margin-top: 154px;
+  padding-bottom: 30px;
 }
 
 .home-title {
@@ -92,6 +97,6 @@ body {
 
 @media screen and (max-width: 500px) {
   .home-content { margin-top: 80px; }
-  .home-title { font-size: 30px; }
+  .home-title { font-size: 26px; }
   .box-item { width: 33.33%; min-width: auto; }
 }
