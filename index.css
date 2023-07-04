@@ -91,6 +91,7 @@ body {
 .box-item-name { text-align: center; font-size: 14px; margin-top: 10px; }
 
 @media screen and (max-width: 500px) {
+  .home-content { margin-top: 80px; }
   .home-title { font-size: 30px; }
   .box-item { width: 33.33%; min-width: auto; }
 }

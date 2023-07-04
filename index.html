@@ -17,8 +17,9 @@
 <link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css" />
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 <script src="https://unpkg.com/element-plus"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script>
-  const { createApp, defineComponent, ref } = Vue
+  const { createApp, defineComponent, ref, reactive } = Vue
   const Item = defineComponent({
     props: ['data'],
     setup(props) {
@@ -75,6 +76,74 @@
     `,
   });
   
+  const StepNum = defineComponent({
+    name: 'StepNum',
+    components: {
+      'el-form': ElementPlus.ElForm,
+      'el-form-item': ElementPlus.ElFormItem,
+      'el-input': ElementPlus.ElInput,
+      'el-button': ElementPlus.ElButton,
+    },
+    setup() {
+      const formData = reactive({
+        mobile: '',
+        password: '',
+        step: '',
+      });
+      const rules = {
+        mobile: { required: true, message: '请输入账号' },
+        password: { required: true, message: '请输入密码' },
+        step: { required: true, message: '请输入步数' },
+      };
+      const formRef = ref(null);
+      const onSubmit = (formRef) => {
+        formRef.validate(valid => {
+          if (!valid) return false;
+          axios({
+            url: 'https://api.kit9.cn/api/xiaomi_sports/api.php',
+            method: 'post',
+            headers: {
+              'content-type': 'application/x-www-form-urlencoded',
+            },
+            data: {
+              ...formData,
+            }
+          })
+            .then(res => {
+              console.log('res', res);
+              if (res.data.code === 200) {
+                ElementPlus.ElMessage.success('成功');
+              }
+              else {
+                ElementPlus.ElMessage.error(res.data.data || '失败');
+              }
+            })
+        });
+      };
+      return {
+        formRef,
+        formData,
+        rules,
+        onSubmit,
+      };
+    },
+    template: `
+      <el-form ref="formRef" label-width="110" :model="formData" :rules="rules">
+        <el-form-item label="小米运动账号" prop="mobile">
+          <el-input placeholder="请输入小米账号" style="width: 100%; max-width: 500px;" v-model="formData.mobile" />
+        </el-form-item>
+        <el-form-item label="小米运动密码" prop="password">
+          <el-input placeholder="请输入小米账号" style="width: 100%; max-width: 500px;" v-model="formData.password" />
+        </el-form-item>
+        <el-form-item label="步数" prop="step">
+          <el-input placeholder="请输入小米账号" style="width: 100%; max-width: 500px;" v-model="formData.step" />
+        </el-form-item>
+        <el-form-item>
+          <el-button style="width: 100px;" @click="onSubmit(formRef)">刷步</el-button>
+        </el-form-item>
+      </el-form>
+    `,
+  });
   const xywy = () => {
     ElementPlus.ElMessageBox.alert(
       `
@@ -92,7 +161,7 @@
 
   
   createApp({
-    components: { Search, Item },
+    components: { StepNum, Search, Item },
     data() {
       return {
         projectList: [
@@ -122,6 +191,11 @@
             <div class="box-warp">
               <Item v-for="(item, index) in projectList" :key="index" :data="item" />
             </div>
+          </div>
+
+          <div class="box">
+            <div class="box-title">极速刷步</div>
+            <div class="box-warp"><StepNum /></div>
           </div>
         </div>
       </div>
