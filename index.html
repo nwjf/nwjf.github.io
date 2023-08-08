@@ -242,7 +242,8 @@
             <div style="font-size: 16px;">
               <b>方案1:</b> &nbsp;&nbsp;提供定时刷固定步数方案，解放双手<br/><br/>
               <b>方案2:</b> &nbsp;&nbsp;为您量身定制个性方案<br/><br/>
-              <b>tips:</b> &nbsp;&nbsp;可免费订阅邮件服务
+              <b>tips:</b> &nbsp;&nbsp;可免费订阅邮件服务<br>
+              <img src="./assets/wechat.png" style="display: block; margin: 20px auto 0;width: 200px;height: 200px;" />
             </div>
           `,
           '解放双手',
@@ -274,7 +275,7 @@
               <div class="box">
                 <div class="box-title">
                   <span>极速刷步(小米运动)</span>
-                  <span @click="onAuto">点我自动刷</span>
+                  <span style="color: red;" @click="onAuto">点我自动刷</span>
                 </div>
                 <div class="box-warp"><StepNum @submit="xiaomiFn" type="mi"/></div>
               </div>
@@ -283,7 +284,7 @@
               <div class="box">
                 <div class="box-title">
                   <span>极速刷步(zepp life app)</span>
-                  <span @click="onAuto">点我自动刷</span>
+                  <span style="color: red;" @click="onAuto">点我自动刷</span>
                 </div>
                 <div class="box-warp"><StepNum @submit="zepplifeFn" type="zeppLife"/></div>
               </div>
