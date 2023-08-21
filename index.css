@@ -103,3 +103,13 @@ body {
   .home-title { font-size: 26px; }
   .box-item { width: 33.33%; min-width: auto; }
 }
+
+.footer {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+  /* color: red; */
+  position: relative;
+  z-index: 2;
+  padding: 20px 0;
+}
